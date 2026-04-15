@@ -34,13 +34,13 @@ body {
 
 .review-card {
     width: 100%;
-    max-width: 320px;
+    max-width: 260px;
     margin: 0 auto;
 }
 
 .review-card .review-img {
     width: 100%;
-    height: 220px;
+    height: 180px;
     object-fit: cover;
     object-position: center top;
     display: block;
