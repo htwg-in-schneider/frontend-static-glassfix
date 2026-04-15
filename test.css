@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.card-img-fix {
+    height: 250px;       
+    object-fit: cover;  
+    object-position: top;
+}
+
+
+.side-img {
+    max-height: 300px; 
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+
+.icon-size {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+
