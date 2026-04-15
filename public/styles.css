@@ -21,6 +21,15 @@ body {
     background-color: white;
 }
 
+.review-img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    object-position: center;
+    background-color: white;
+    display: block;
+}
+
 .service-card {
     width: 100%;
     max-width: 340px;
