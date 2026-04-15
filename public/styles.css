@@ -23,11 +23,9 @@ body {
 
 .review-img {
     width: 100%;
-    height: 320px;
-    object-fit: contain;
-    object-position: center;
-    background-color: white;
-    display: block;
+    height: 260px;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .service-card {
@@ -43,7 +41,8 @@ body {
 
 .review-card {
     width: 100%;
-    max-width: 18rem;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 .side-img {
