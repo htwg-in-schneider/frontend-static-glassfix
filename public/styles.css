@@ -16,8 +16,9 @@ body {
 
 .card-img-fix {
     height: 250px;
-    object-fit: cover;
-    object-position: top;
+    object-fit: contain;
+    object-position: center;
+    background-color: white;
 }
 
 .service-card {
