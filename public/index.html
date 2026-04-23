@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <script src="startseiteScript.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
 </head>
 
 <body>
@@ -21,39 +22,49 @@
             </div>
 
             <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
-                <div class="card shadow-sm m-3 w-100" style="max-width: 20rem;">
+                <div class="card m-3 w-100" style="max-width: 20rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                     <div class="card-body">
                         <h5 class="card-title fw-bold" style="font-size: clamp(1rem, 2vw, 1.25rem);">
                             Bringe deine Glasstücke auf neuen Glanz!
                         </h5>
-                        <a href="anmeldung.html" class="btn btn-danger w-100">Jetzt loslegen</a>
+                        <a href="" class="btn costum-pill w-100">Jetzt loslegen</a>
+                        <a href="anmeldung.html" class="btn border w-100 costum-pill-2">Anmelden</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row bg-light p-2">
-            <div class="col-12">
-                <ul class="nav nav-pills nav-justified flex-column flex-md-row">
-                    <li class="nav-item m-1">
-                        <a class="nav-link costum-pill" href="#Service">Service</a>
-                    </li>
-                    <li class="nav-item m-1">
-                        <a class="nav-link costum-pill" href="#WarumGlassFix">Warum GlassFix</a>
-                    </li>
-                    <li class="nav-item m-1">
-                        <a class="nav-link costum-pill" href="#Ablauf">Ablauf</a>
-                    </li>
-                    <li class="nav-item m-1">
-                        <a class="nav-link costum-pill" href="#Rezensionen">Rezensionen</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-md navbar-inverse bg-light sticky-top shadow-sm">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link costum-pill" href="#Service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link costum-pill" href="#WarumGlassFix">Warum GlassFix</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link costum-pill" href="#Ablauf">Ablauf</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link costum-pill" href="#Rezensionen">Rezensionen</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-        </div>
+        </nav>
 
         <div class="row bg-light" id="Service">
             <div class="col-12 p-3">
-                <h4 class="text-center">Unsere Glasservice - Leistungen</h4>
+                <h3 class="text-center">Unsere Glasservice - Leistungen</h3>
             </div>
         </div>
 
@@ -67,35 +78,40 @@
 
             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                 <div class="d-flex flex-column bg-light rounded border align-items-center p-2 service-card">
-                    <img src="ProjektBilder/Leistung2.png" alt="Schleifen" class="img-fluid m-2 card-img-fix service-img">
+                    <img src="ProjektBilder/Leistung2.png" alt="Schleifen"
+                        class="img-fluid m-2 card-img-fix service-img">
                     <span class="mb-2 text-center text-muted">Schleifen <br>Randbearbeitung; Ausbrüche entfernen</span>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                 <div class="d-flex flex-column bg-light rounded border align-items-center p-2 service-card">
-                    <img src="ProjektBilder/Leistung3.HEIC" alt="Polieren" class="img-fluid m-2 card-img-fix service-img">
-                    <span class="mb-2 text-center text-muted">Polieren <br> Kratzer, matte Stellen wieder <br>glänzend machen</span>
+                    <img src="ProjektBilder/Leistung3.HEIC" alt="Polieren"
+                        class="img-fluid m-2 card-img-fix service-img">
+                    <span class="mb-2 text-center text-muted">Polieren <br> Kratzer, matte Stellen wieder <br>glänzend
+                        machen</span>
                 </div>
             </div>
         </div>
 
         <div class="row bg-light pb-5" id="WarumGlassFix">
             <div class="col-12">
-                <h4 class="text-center">
+                <h3 class="text-center">
                     Warum GlassFix die richtige Wahl ist
-                </h4>
+                </h3>
             </div>
         </div>
 
         <div class="row pb-5 bg-light d-flex justify-content-center p-1 align-items-center">
 
             <div class="col-6 col-lg-2 d-flex justify-content-center align-items-center m-lg-2 mb-3 mb-lg-0">
-                <img src="ProjektBilder/BeforAfterLinks.png" alt="Vorher Nachher links" class="img-fluid side-img">
+                <img src="ProjektBilder/BeforAfterLinks.png" alt="Vorher Nachher links"
+                    class="img-fluid side-img side-img-left">
             </div>
 
-            <div class="col-12 col-lg-6 m-2 order-last order-lg-0">
-                <div class="row align-items-center mb-4">
+            <div
+                class="col-lg-4 m-2 mx-5 order-last order-lg-0 d-flex flex-column justify-content-center align-items-center">
+                <div class="row align-items-center mb-4 w-100 justify-content-center">
                     <div class="col-auto">
                         <img src="ProjektBilder/Warum1.png" alt="Erfahrene Fachkräfte" class="rounded icon-size">
                     </div>
@@ -104,7 +120,7 @@
                         <p class="m-0 text-muted">Mit Spezialisierung auf Glasbearbeitung.</p>
                     </div>
                 </div>
-                <div class="row align-items-center mb-4">
+                <div class="row align-items-center mb-4 w-100 justify-content-center">
                     <div class="col-auto">
                         <img src="ProjektBilder/Warum2.png" alt="Schnelle Einschätzung" class="rounded icon-size">
                     </div>
@@ -113,7 +129,7 @@
                         <p class="m-0 text-muted">Rasche Analyse und Angebote.</p>
                     </div>
                 </div>
-                <div class="row align-items-center mb-4">
+                <div class="row align-items-center mb-4 w-100 justify-content-center">
                     <div class="col-auto">
                         <img src="ProjektBilder/Warum3.png" alt="Individuelle Lösungen" class="rounded icon-size">
                     </div>
@@ -125,18 +141,19 @@
             </div>
 
             <div class="col-6 col-lg-2 d-flex justify-content-center align-items-center m-lg-2 mb-3 mb-lg-0">
-                <img src="ProjektBilder/BeforeAfterRechts.png" alt="Vorher Nachher rechts" class="img-fluid side-img">
+                <img src="ProjektBilder/BeforeAfterRechts.png" alt="Vorher Nachher rechts"
+                    class="img-fluid side-img side-img-right">
             </div>
 
         </div>
 
-        <div class="row bg-light">
+        <div class="row bg-light" id="Ablauf">
             <div class="col-12 p-3">
-                <h4 class="text-center">So funktioniert es:</h4>
+                <h3 class="text-center">So funktioniert es:</h3>
             </div>
         </div>
 
-        <div class="row bg-light pb-5 justify-content-center g-4" id="Ablauf">
+        <div class="row bg-light pb-5 justify-content-center g-4">
             <div class="col-12 col-md-4 d-flex flex-column align-items-center">
                 <img src="ProjektBilder/AblaufBild1.png" alt="Registrieren" class="img-fluid m-1 ablauf-img">
                 <h6 class="text-muted text-center">Anmelden/Registrieren</h6>
@@ -153,35 +170,37 @@
 
         <div class="row bg-light" id="Rezensionen">
             <div class="col-12 p-3">
-                <h4 class="text-center">Kunden Rezensionen</h4>
+                <h3 class="text-center">Kunden Rezensionen</h3>
             </div>
         </div>
 
-     <div class="row pb-5 bg-light g-4 justify-content-center">
-    <div class="col-12 col-md-6 d-flex justify-content-center">
-        <div class="card h-100 review-card">
-            <img src="ProjektBilder/Persona1.png" class="card-img-top review-img" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Maike Maier</h5>
-                <p class="card-text text-muted">
-                    Ich bin durch meine Arbeit auf die Website gestoßen und nutze sie seitdem regelmäßig
-                </p>
+        <div class="row pb-5 bg-light g-4 justify-content-center">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="card h-100 review-card">
+                    <img src="ProjektBilder/Persona1.png" class="card-img-top review-img" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Maike Maier</h5>
+                        <p class="card-text text-muted">
+                            Ich bin durch meine Arbeit auf die Website gestoßen und nutze sie seitdem regelmäßig
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div class="col-12 col-md-6 d-flex justify-content-center">
-        <div class="card h-100 review-card">
-            <img src="ProjektBilder/Persona2.png" class="card-img-top review-img" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Max Mustermann</h5>
-                <p class="card-text text-muted">
-                    Mein Flohmarkt-Fund sieht wieder aus wie neu – und wie sich herausgestellt hat, ist er auch einiges wert!
-                </p>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="card h-100 review-card">
+                    <img src="ProjektBilder/Persona2.png" class="card-img-top review-img" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Max Mustermann</h5>
+                        <p class="card-text text-muted">
+                            Mein Flohmarkt-Fund sieht wieder aus wie neu – und wie sich herausgestellt hat, ist er auch
+                            einiges wert!
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+        
 </body>
 
 </html>

@@ -2,16 +2,88 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+h3.text-center {
+    font-weight: 700;
+    background: linear-gradient(90deg, #990000, #994d00, #999900, #008000, #006699, #4d0080, #99004d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
 .costum-pill {
-    background-color: rgb(247, 109, 11);
-    color: black;
+    background-color: rgb(245, 148, 51);
+    color: rgb(255, 252, 252);
+    margin: 5px;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.costum-pill-2 {
+    background-color: rgb(255, 253, 253);
     margin: 5px;
     border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .costum-pill:hover {
     background-color: rgba(250, 162, 99, 0.821);
-    color: gray;
+    color: rgb(255, 253, 253);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        background-color: rgb(245, 148, 51) !important;
+
+    }
+    
+    .navbar-header {
+        width: 100%;
+    }
+    
+    .navbar-toggler {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        display: block;
+        border: none;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-nav .costum-pill {
+        background-color: white !important;
+        color: black !important;
+        margin: 0.5rem auto !important;
+        display: block;
+        width: 90%;
+    }
+
+    .navbar-nav .costum-pill:hover {
+        color: rgb(245, 148, 51) !important;
+        margin: 0.5rem auto !important;
+        display: block;
+        width: 90%;
+    }
+}
+
+
+
+.costum-pill-2:hover {
+    background-color: white;
+    color: rgb(245, 148, 51);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-fix {
@@ -24,6 +96,14 @@ body {
 .service-card {
     width: 100%;
     max-width: 340px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 .service-img {
@@ -36,6 +116,7 @@ body {
     width: 100%;
     max-width: 260px;
     margin: 0 auto;
+
 }
 
 .review-card .review-img {
@@ -52,12 +133,31 @@ body {
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.8s ease;
 }
 
+/* Las animaciones solo en laptop (lg y superior) */
+@media (min-width: 992px) {
+    .side-img-left:hover {
+        transform: translateX(-20px) scale(2) rotate(360deg);
+    }
+
+    .side-img-right:hover {
+        transform: translateX(20px) scale(2) rotate(360deg);
+    }
+}
+
+
+
 .icon-size {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.icon-size:hover {
+    transform: translateX(10px);
 }
 
 .ablauf-img {
@@ -82,5 +182,35 @@ body {
 
     .review-card .review-img {
         height: 200px;
+        margin: 1rem;
+    }
+}
+
+
+/* Navbar styling en pantallas grandes */
+@media (min-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 0.5rem;
+        flex: 1;
+    }
+    
+    .navbar-nav .costum-pill {
+        border-radius: 4px;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .ablauf-img {
+        width: 80px;
+        height: 80px;
     }
 }
